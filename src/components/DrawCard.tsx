@@ -24,13 +24,11 @@ export function DrawCard({
   const status = getStatus(draw, now);
   const timing = describeTiming(draw, now);
 
-  // Keep the highlighted product visible even when collapsed
-  let items = draw.items;
-  if (!expanded && items.length > COLLAPSED_COUNT) {
-    const head = items.slice(0, COLLAPSED_COUNT);
-    const hit = highlightSlug && items.slice(COLLAPSED_COUNT).find((i) => i.productSlug === highlightSlug);
-    items = hit ? [...head, hit] : head;
-  }
+  // Highlighted product first, so it stays visible when collapsed
+  let items = highlightSlug
+    ? [...draw.items.filter((i) => i.productSlug === highlightSlug), ...draw.items.filter((i) => i.productSlug !== highlightSlug)]
+    : draw.items;
+  if (!expanded) items = items.slice(0, COLLAPSED_COUNT);
   const hidden = draw.items.length - items.length;
 
   return (

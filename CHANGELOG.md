@@ -9,6 +9,7 @@
 - Add draws page with status tabs, city/product filters, search and live countdowns
 - Add draw detail page with full item list and original post text
 - Add store directory grouped by city with search, and store detail pages listing each store's draws
+- Add product catalog grouped by series with open-draw counts, and product detail pages with merged spelling variants
 
 ### Fixed
 
