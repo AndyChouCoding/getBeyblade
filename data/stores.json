@@ -1,0 +1,487 @@
+[
+  {
+    "id": "funboxsogo",
+    "name": "Funbox-忠孝SOGO店",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/funboxsogo/",
+    "enabled": true
+  },
+  {
+    "id": "100063971526338",
+    "name": "FunBox Toys-新光三越南西店",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/FunBox-Toys-%E6%96%B0%E5%85%89%E4%B8%89%E8%B6%8A%E5%8D%97%E8%A5%BF%E5%BA%97-100063971526338/",
+    "enabled": true
+  },
+  {
+    "id": "61551944767554",
+    "name": "FunBox Toys 遠百信義 A13",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/FunBox-Toys-%E9%81%A0%E7%99%BE%E4%BF%A1%E7%BE%A9-A13-61551944767554/",
+    "enabled": true
+  },
+  {
+    "id": "funbox.honhui",
+    "name": "Funbox-宏匯廣場",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/funbox.honhui/",
+    "enabled": true
+  },
+  {
+    "id": "61550966930126",
+    "name": "Funbox-裕隆城",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E8%A3%95%E9%9A%86%E5%9F%8E-61550966930126/",
+    "enabled": true
+  },
+  {
+    "id": "ZhubeiFunbox",
+    "name": "Funbox-竹北遠東店",
+    "city": "新竹縣",
+    "fbUrl": "https://www.facebook.com/ZhubeiFunbox/",
+    "enabled": true
+  },
+  {
+    "id": "100063893358626",
+    "name": "Funbox 台中中友",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%8F%B0%E4%B8%AD%E4%B8%AD%E5%8F%8B-100063893358626/",
+    "enabled": true
+  },
+  {
+    "id": "funboxdreammall",
+    "name": "Funbox-夢時代店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/funboxdreammall/",
+    "enabled": true
+  },
+  {
+    "id": "kaohsiungfunboxsogo",
+    "name": "Funbox-高雄SOGO店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/kaohsiungfunboxsogo/",
+    "enabled": true
+  },
+  {
+    "id": "funbox.wufu",
+    "name": "麗嬰國際五福店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/funbox.wufu/",
+    "enabled": true
+  },
+  {
+    "id": "funboxtoyluna",
+    "name": "Funbox Toy-宜蘭新月廣場店",
+    "city": "宜蘭縣",
+    "fbUrl": "https://www.facebook.com/funboxtoyluna/",
+    "enabled": true
+  },
+  {
+    "id": "100057278176572",
+    "name": "Funbox-台東秀泰店",
+    "city": "臺東縣",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%8F%B0%E6%9D%B1%E7%A7%80%E6%B3%B0%E5%BA%97-100057278176572/",
+    "enabled": true
+  },
+  {
+    "id": "Funbox.Pier3.Penghu",
+    "name": "Funbox-澎湖3號港店",
+    "city": "澎湖縣",
+    "fbUrl": "https://www.facebook.com/Funbox.Pier3.Penghu/",
+    "enabled": true
+  },
+  {
+    "id": "funboxtoysofficialtw",
+    "name": "Funbox Toy 官方",
+    "city": "全台",
+    "fbUrl": "https://www.facebook.com/funboxtoysofficialtw/",
+    "enabled": true
+  },
+  {
+    "id": "61592597564673",
+    "name": "Funbox-天母SOGO店",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/people/Funbox-%E5%A4%A9%E6%AF%8DSOGO%E5%BA%97/61592597564673/",
+    "enabled": true
+  },
+  {
+    "id": "61593176934292",
+    "name": "Funbox-新光三越站前店",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/profile.php?id=61593176934292",
+    "enabled": true
+  },
+  {
+    "id": "61592745155105",
+    "name": "Funbox 天母三越店",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%A4%A9%E6%AF%8D%E4%B8%89%E8%B6%8A%E5%BA%97-61592745155105/",
+    "enabled": true
+  },
+  {
+    "id": "ybg5152n",
+    "name": "Funbox Toys-大葉高島屋店",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/ybg5152n/",
+    "enabled": true
+  },
+  {
+    "id": "61592730395195",
+    "name": "Fun box-美麗華",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/Fun-box-%E7%BE%8E%E9%BA%97%E8%8F%AF-61592730395195/",
+    "enabled": true
+  },
+  {
+    "id": "61593106704912",
+    "name": "Funbox-信義A8",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E4%BF%A1%E7%BE%A9A8-61593106704912/",
+    "enabled": true
+  },
+  {
+    "id": "1514331708819939",
+    "name": "南港潤泰fun box",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/%E5%8D%97%E6%B8%AF%E6%BD%A4%E6%B3%B0fun-box-1514331708819939/",
+    "enabled": true
+  },
+  {
+    "id": "61575325211390",
+    "name": "Funbox-中和環球",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E4%B8%AD%E5%92%8C%E7%92%B0%E7%90%83-61575325211390/",
+    "enabled": true
+  },
+  {
+    "id": "61584956488867",
+    "name": "Funbox&Sanrio板橋大遠百",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/profile.php?id=61584956488867",
+    "enabled": true
+  },
+  {
+    "id": "61591626788210",
+    "name": "Funbox 廣三sogo",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/61591626788210/",
+    "enabled": true
+  },
+  {
+    "id": "61592230678156",
+    "name": "funbox板橋遠百中山店",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/p/funbox%E6%9D%BF%E6%A9%8B%E9%81%A0%E7%99%BE%E4%B8%AD%E5%B1%B1%E5%BA%97-61592230678156/",
+    "enabled": true
+  },
+  {
+    "id": "100063657227053",
+    "name": "Funbox中壢大江店",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/p/Funbox%E4%B8%AD%E5%A3%A2%E5%A4%A7%E6%B1%9F%E5%BA%97-100063657227053/",
+    "enabled": true
+  },
+  {
+    "id": "miaolishangshunfunbox",
+    "name": "Funbox-苗栗尚順店",
+    "city": "苗栗縣",
+    "fbUrl": "https://www.facebook.com/miaolishangshunfunbox/",
+    "enabled": true
+  },
+  {
+    "id": "61591892913613",
+    "name": "Fun Box 新竹巨城",
+    "city": "新竹市",
+    "fbUrl": "https://www.facebook.com/p/Fun-Box-%E6%96%B0%E7%AB%B9%E5%B7%A8%E5%9F%8E-61591892913613/",
+    "enabled": true
+  },
+  {
+    "id": "61591770278850",
+    "name": "Funbox-新光三越台中中港店",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E6%96%B0%E5%85%89%E4%B8%89%E8%B6%8A%E5%8F%B0%E4%B8%AD%E4%B8%AD%E6%B8%AF%E5%BA%97-61591770278850/",
+    "enabled": true
+  },
+  {
+    "id": "61593044811347",
+    "name": "Funbox 台中港三井",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/profile.php?id=61593044811347",
+    "enabled": true
+  },
+  {
+    "id": "61592677934745",
+    "name": "FunBox-比漾廣場",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/p/FunBox-%E6%AF%94%E6%BC%BE%E5%BB%A3%E5%A0%B4-61592677934745/",
+    "enabled": true
+  },
+  {
+    "id": "61592991209842",
+    "name": "Fun box & 星奇市 汐科遠雄店",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/p/Fun-box-%E6%98%9F%E5%A5%87%E5%B8%82-%E6%B1%90%E7%A7%91%E9%81%A0%E9%9B%84%E5%BA%97-61592991209842/",
+    "enabled": true
+  },
+  {
+    "id": "61591486063647",
+    "name": "Funbox樹林秀泰",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox%E6%A8%B9%E6%9E%97%E7%A7%80%E6%B3%B0-61591486063647/",
+    "enabled": true
+  },
+  {
+    "id": "61592776751388",
+    "name": "Funbox-淡水禮萊廣場店",
+    "city": "新北市",
+    "fbUrl": "https://www.facebook.com/people/Funbox-%E6%B7%A1%E6%B0%B4%E7%A6%AE%E8%90%8A%E5%BB%A3%E5%A0%B4%E5%BA%97/61592776751388/",
+    "enabled": true
+  },
+  {
+    "id": "feds.hualien",
+    "name": "遠東百貨 花蓮店 - Fun box戰鬥陀螺抽籤購買公告 限量商品・抽中購買 …",
+    "city": "花蓮縣",
+    "fbUrl": "https://www.facebook.com/feds.hualien/",
+    "enabled": true
+  },
+  {
+    "id": "61593737335376",
+    "name": "Funbox-台北大巨蛋",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%8F%B0%E5%8C%97%E5%A4%A7%E5%B7%A8%E8%9B%8B-61593737335376/",
+    "enabled": true
+  },
+  {
+    "id": "61591146280101",
+    "name": "Funbox-LaLaport南港",
+    "city": "臺北市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-LaLaport%E5%8D%97%E6%B8%AF-61591146280101/",
+    "enabled": true
+  },
+  {
+    "id": "100064059014450",
+    "name": "Funbox Toys 桃園新光站前店",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-Toys-%E6%A1%83%E5%9C%92%E6%96%B0%E5%85%89%E7%AB%99%E5%89%8D%E5%BA%97-100064059014450/",
+    "enabled": true
+  },
+  {
+    "id": "SKMFUNBOX",
+    "name": "FunBox桃園新光三越大有店",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/SKMFUNBOX/",
+    "enabled": true
+  },
+  {
+    "id": "100064240476385",
+    "name": "FunBox 桃園遠東店",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/p/FunBox-%E6%A1%83%E5%9C%92%E9%81%A0%E6%9D%B1%E5%BA%97-100064240476385/",
+    "enabled": true
+  },
+  {
+    "id": "61591728303067",
+    "name": "Funbox-桃園環球A8",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/people/Funbox-%E6%A1%83%E5%9C%92%E7%92%B0%E7%90%83A8/61591728303067/",
+    "enabled": true
+  },
+  {
+    "id": "TarokoSquare",
+    "name": "大魯閣湳雅廣場 - FUNBOX 消費滿888玩轉轉樂!! 有機會再帶一個玩具 …",
+    "city": "新竹市",
+    "fbUrl": "https://www.facebook.com/TarokoSquare/",
+    "enabled": false,
+    "note": "商場粉專，非 Funbox 門市"
+  },
+  {
+    "id": "61591842121755",
+    "name": "Funbox-新竹遠東",
+    "city": "新竹市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E6%96%B0%E7%AB%B9%E9%81%A0%E6%9D%B1-61591842121755/",
+    "enabled": true
+  },
+  {
+    "id": "61558958859748",
+    "name": "Funbox中壢SOGO",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/p/Funbox%E4%B8%AD%E5%A3%A2SOGO-61558958859748/",
+    "enabled": true
+  },
+  {
+    "id": "taimall.tw",
+    "name": "#新櫃登場 4樓funbox Toys... - 台茂購物中心 TaiMall …",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/taimall.tw/",
+    "enabled": false,
+    "note": "商場粉專，非 Funbox 門市"
+  },
+  {
+    "id": "100083960592067",
+    "name": "FunBox-環球桃園A19",
+    "city": "桃園市",
+    "fbUrl": "https://www.facebook.com/profile.php?id=100083960592067",
+    "enabled": true
+  },
+  {
+    "id": "61592589610506",
+    "name": "Funbox-豐原太平洋店",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E8%B1%90%E5%8E%9F%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%BA%97-61592589610506/",
+    "enabled": true
+  },
+  {
+    "id": "61592565224068",
+    "name": "Funbox-台中遠東",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%8F%B0%E4%B8%AD%E9%81%A0%E6%9D%B1-61592565224068/",
+    "enabled": true
+  },
+  {
+    "id": "61591619110583",
+    "name": "Funbox文心秀泰",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/people/Funbox%E6%96%87%E5%BF%83%E7%A7%80%E6%B3%B0/61591619110583/",
+    "enabled": true
+  },
+  {
+    "id": "61591544926718",
+    "name": "Funbox-台中lalaport店",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/people/Funbox-%E5%8F%B0%E4%B8%ADlalaport%E5%BA%97/61591544926718/",
+    "enabled": true
+  },
+  {
+    "id": "61592777043158",
+    "name": "Funbox-漢神洲際",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/profile.php?id=61592777043158",
+    "enabled": true
+  },
+  {
+    "id": "61592768918548",
+    "name": "Funbox-嘉義遠東",
+    "city": "嘉義市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%98%89%E7%BE%A9%E9%81%A0%E6%9D%B1-61592768918548/",
+    "enabled": true
+  },
+  {
+    "id": "61591841012874",
+    "name": "Funbox-嘉義耐斯",
+    "city": "嘉義市",
+    "fbUrl": "https://www.facebook.com/people/Funbox-%E5%98%89%E7%BE%A9%E8%80%90%E6%96%AF/61591841012874/",
+    "enabled": true
+  },
+  {
+    "id": "61592696826400",
+    "name": "Funbox-嘉義三越",
+    "city": "嘉義市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%98%89%E7%BE%A9%E4%B8%89%E8%B6%8A-61592696826400/",
+    "enabled": true
+  },
+  {
+    "id": "funboxhanshin",
+    "name": "Funbox-高雄漢神店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/funboxhanshin/",
+    "enabled": true
+  },
+  {
+    "id": "61591963333031",
+    "name": "Funbox 台南三井",
+    "city": "臺南市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%8F%B0%E5%8D%97%E4%B8%89%E4%BA%95-61591963333031/",
+    "enabled": true
+  },
+  {
+    "id": "funboxtoyPacific",
+    "name": "Funbox-屏東太平洋店",
+    "city": "屏東縣",
+    "fbUrl": "https://www.facebook.com/funboxtoyPacific/",
+    "enabled": true
+  },
+  {
+    "id": "100063915310584",
+    "name": "Funbox麗嬰國際-台南遠百店",
+    "city": "臺南市",
+    "fbUrl": "https://www.facebook.com/p/Funbox%E9%BA%97%E5%AC%B0%E5%9C%8B%E9%9A%9B-%E5%8F%B0%E5%8D%97%E9%81%A0%E7%99%BE%E5%BA%97-100063915310584/",
+    "enabled": true
+  },
+  {
+    "id": "61591811292491",
+    "name": "Funbox 高雄大遠百",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E9%AB%98%E9%9B%84%E5%A4%A7%E9%81%A0%E7%99%BE-61591811292491/",
+    "enabled": true
+  },
+  {
+    "id": "100063718945104",
+    "name": "Fun Box麗嬰國際 台南新天地",
+    "city": "臺南市",
+    "fbUrl": "https://www.facebook.com/p/Fun-Box%E9%BA%97%E5%AC%B0%E5%9C%8B%E9%9A%9B-%E5%8F%B0%E5%8D%97%E6%96%B0%E5%A4%A9%E5%9C%B0-100063718945104/",
+    "enabled": true
+  },
+  {
+    "id": "100054441671873",
+    "name": "Funbox- 漢神巨蛋店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/100054441671873/",
+    "enabled": true
+  },
+  {
+    "id": "100057115973730",
+    "name": "Funbox-高雄左營店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E9%AB%98%E9%9B%84%E5%B7%A6%E7%87%9F%E5%BA%97-100057115973730/",
+    "enabled": true
+  },
+  {
+    "id": "61591804545442",
+    "name": "Funbox 屏東環球",
+    "city": "屏東縣",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%B1%8F%E6%9D%B1%E7%92%B0%E7%90%83-61591804545442/",
+    "enabled": true
+  },
+  {
+    "id": "100057043616291",
+    "name": "Funbox-南紡購物中心",
+    "city": "臺南市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E5%8D%97%E7%B4%A1%E8%B3%BC%E7%89%A9%E4%B8%AD%E5%BF%83-100057043616291/",
+    "enabled": true
+  },
+  {
+    "id": "61591920780307",
+    "name": "funbox高雄大立店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/profile.php?id=61591920780307",
+    "enabled": true
+  },
+  {
+    "id": "FUNBOX.AD338",
+    "name": "Funbox-義享天地店",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/FUNBOX.AD338/",
+    "enabled": true
+  },
+  {
+    "id": "61592814215979",
+    "name": "Funbox-麗寶一期",
+    "city": "臺中市",
+    "fbUrl": "https://www.facebook.com/p/Funbox-%E9%BA%97%E5%AF%B6%E4%B8%80%E6%9C%9F-61592814215979/",
+    "enabled": true
+  },
+  {
+    "id": "61592279765972",
+    "name": "Funbox大魯閣新光",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/p/Funbox%E5%A4%A7%E9%AD%AF%E9%96%A3%E6%96%B0%E5%85%89-61592279765972/",
+    "enabled": true
+  },
+  {
+    "id": "100057653970900",
+    "name": "義大世界購物廣場 fun box 義大2館",
+    "city": "高雄市",
+    "fbUrl": "https://www.facebook.com/p/%E7%BE%A9%E5%A4%A7%E4%B8%96%E7%95%8C%E8%B3%BC%E7%89%A9%E5%BB%A3%E5%A0%B4-fun-box-outlet-100057653970900/",
+    "enabled": true
+  }
+]
