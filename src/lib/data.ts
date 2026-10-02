@@ -165,6 +165,13 @@ export function getDrawsByProduct(slug: string) {
   return draws.filter((d) => d.items.some((i) => i.productSlug === slug));
 }
 
+/** How the posts actually spelled a product, most common first. */
+export function getSpellings(slug: string) {
+  const counts = new Map<string, number>();
+  for (const d of draws) for (const i of d.items) if (i.productSlug === slug) counts.set(i.rawName, (counts.get(i.rawName) ?? 0) + 1);
+  return [...counts].sort((a, b) => b[1] - a[1]).map(([name, count]) => ({ name, count }));
+}
+
 export function getCities() {
   return [...new Set(stores.map((s) => s.city))].sort(compareCity);
 }
