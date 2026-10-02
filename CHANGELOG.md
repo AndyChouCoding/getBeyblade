@@ -2,10 +2,15 @@
 
 ## [Unreleased]
 ### Added
-- Group search results by product: searching a code/name/spelling (e.g. "ux15", "鯊魚包") or picking a product shows one block per product listing every store's draw link; blocks follow the status tabs and city filter
-- Mark opened draw links as "已開啟" (stored in the browser), with a button to clear the marks
 
 ### Fixed
+
+### Changed
+
+## [v1.1.0] - 2026-10-02
+### Added
+- Group search results by product: searching a code/name/spelling (e.g. "ux15", "鯊魚包") or picking a product shows one block per product listing every store's draw link; blocks follow the status tabs and city filter
+- Mark opened draw links as "已開啟" (stored in the browser), with a button to clear the marks
 
 ### Changed
 - Search ignores case, spaces and hyphens in product codes
