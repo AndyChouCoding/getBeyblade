@@ -154,3 +154,14 @@ export const STORE_NAME_OVERRIDES: Record<string, string> = {
   TarokoSquare: "大魯閣湳雅廣場",
   "taimall.tw": "台茂購物中心",
 };
+
+/**
+ * Draws where the scraper set drawEnd equal to drawStart. The real end time is
+ * in the post text (e.g. "2026/10/2（五）11:00～10/3（六）21:00").
+ */
+export const DRAW_END_OVERRIDES: Record<string, string> = {
+  "9e6421e7bbfa": "2026-10-03T21:00:00+08:00", // Funbox-天母SOGO店
+  "951e2a39f4a7": "2026-10-03T21:00:00+08:00", // Funbox-嘉義三越
+  "5f9d54fe6b0f": "2026-09-25T21:00:00+08:00", // Funbox-嘉義三越
+  f4f413b3f955: "2026-09-19T21:00:00+08:00", // Funbox-嘉義三越
+};

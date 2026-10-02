@@ -12,5 +12,6 @@
 - Add product catalog grouped by series with open-draw counts, and product detail pages with merged spelling variants
 
 ### Fixed
+- Correct 4 draws whose end time was scraped as equal to the start time (end time taken from the post text); treat any end time not after the start as unknown
 
 ### Changed

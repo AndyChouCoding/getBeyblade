@@ -52,10 +52,10 @@ export function DrawCard({
       </header>
 
       <div className="mb-3 rounded-lg bg-surface-2 px-3 py-2 text-xs leading-relaxed">
-        {draw.drawStart && draw.drawEnd ? (
+        {draw.drawStart ? (
           <>
             <p className="tabular text-muted">
-              {formatDateTime(draw.drawStart)} — {formatDateTime(draw.drawEnd)}
+              {formatDateTime(draw.drawStart)} — {draw.drawEnd ? formatDateTime(draw.drawEnd) : "截止時間未標示"}
             </p>
             {timing && <p className="font-medium text-ink">{timing}</p>}
           </>

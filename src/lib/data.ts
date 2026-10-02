@@ -2,8 +2,8 @@ import "server-only";
 
 import rawDrawsFile from "../../data/draws.json";
 import rawStoresFile from "../../data/stores.json";
-import { OTHER_PRODUCT, STORE_NAME_OVERRIDES, cleanName, priceFromName, resolveItem } from "./catalog";
-import type { Draw, Product, RawDrawsFile, RawStore, Series, Store } from "./types";
+import { DRAW_END_OVERRIDES, OTHER_PRODUCT, STORE_NAME_OVERRIDES, cleanName, priceFromName, resolveItem } from "./catalog";
+import type { Draw, Product, RawDraw, RawDrawsFile, RawStore, Series, Store } from "./types";
 
 const rawDraws = (rawDrawsFile as RawDrawsFile).draws;
 const rawStores = rawStoresFile as RawStore[];
@@ -45,6 +45,12 @@ const stores: Store[] = rawStores
 const storeById = new Map(stores.map((s) => [s.id, s]));
 const productBySlug = new Map<string, Product>();
 
+/** Corrected end time; an end that is not after the start is treated as unknown. */
+function drawEndOf(d: RawDraw) {
+  const end = DRAW_END_OVERRIDES[d.id] ?? d.drawEnd;
+  return end && d.drawStart && Date.parse(end) <= Date.parse(d.drawStart) ? null : end;
+}
+
 const draws: Draw[] = rawDraws.map((d) => {
   const store = storeById.get(d.storeId);
   const draw: Draw = {
@@ -54,7 +60,7 @@ const draws: Draw[] = rawDraws.map((d) => {
     city: store?.city ?? d.city,
     postUrl: d.postUrl,
     drawStart: d.drawStart,
-    drawEnd: d.drawEnd,
+    drawEnd: drawEndOf(d),
     items: [],
     extraLinks: [],
     scrapedAt: d.scrapedAt,
@@ -207,7 +213,9 @@ export function getAudit() {
     }).length,
     storesWithoutDraws: stores.filter((s) => !drawStoreIds.has(s.id)),
     renamedStores: stores.filter((s) => s.rawName),
-    undatedDraws: draws.filter((d) => !d.drawStart || !d.drawEnd),
+    undatedDraws: rawDraws.filter((d) => !d.drawStart || !d.drawEnd),
+    zeroLengthDraws: rawDraws.filter((d) => d.drawStart && d.drawEnd && Date.parse(d.drawEnd) <= Date.parse(d.drawStart)),
+    correctedEndDraws: Object.keys(DRAW_END_OVERRIDES).length,
     uncodedItems: items.filter((i) => !i.code).length,
     codesWithSpellingVariants: [...namesByCode.values()].filter((s) => s.size > 1).length,
     itemsWithoutPrice: items.filter((i) => i.price == null).length,

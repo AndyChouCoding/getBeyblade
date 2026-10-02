@@ -1,8 +1,8 @@
 import type { Draw, DrawStatus } from "./types";
 
 export function getStatus(draw: Pick<Draw, "drawStart" | "drawEnd">, now: number): DrawStatus {
+  if (draw.drawStart && now < Date.parse(draw.drawStart)) return "upcoming";
   if (!draw.drawStart || !draw.drawEnd) return "unscheduled";
-  if (now < Date.parse(draw.drawStart)) return "upcoming";
   if (now > Date.parse(draw.drawEnd)) return "ended";
   return "active";
 }
@@ -24,7 +24,7 @@ export function compareByRelevance(a: Draw, b: Draw, now: number) {
   if (sa === "active") return a.drawEnd!.localeCompare(b.drawEnd!);
   if (sa === "upcoming") return a.drawStart!.localeCompare(b.drawStart!);
   if (sa === "ended") return b.drawEnd!.localeCompare(a.drawEnd!);
-  return 0;
+  return (b.drawStart ?? "").localeCompare(a.drawStart ?? "");
 }
 
 // Formatted by hand in Taiwan time (UTC+8, no DST) rather than with Intl, whose
