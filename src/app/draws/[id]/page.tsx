@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { DrawItemList, ExternalIcon } from "@/components/DrawItemList";
+import { DrawItemList } from "@/components/DrawItemList";
+import { ExternalIcon } from "@/components/ExternalIcon";
 import { LiveStatus } from "@/components/LiveStatus";
 import { getDraw, getDraws, renderedAt } from "@/lib/data";
 import { formatDate, formatDateTime } from "@/lib/time";

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { DrawGrid } from "@/components/DrawGrid";
-import { ExternalIcon } from "@/components/DrawItemList";
+import { ExternalIcon } from "@/components/ExternalIcon";
 import { getDrawsByStore, getStore, getStores, renderedAt } from "@/lib/data";
 
 export function generateStaticParams() {

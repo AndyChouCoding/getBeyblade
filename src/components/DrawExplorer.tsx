@@ -6,6 +6,7 @@ import { useNow } from "@/hooks/useNow";
 import { compareByRelevance, getStatus } from "@/lib/time";
 import type { Draw, DrawStatus, Series } from "@/lib/types";
 import { DrawCard } from "./DrawCard";
+import { ProductGroups, type ProductGroup } from "./ProductGroups";
 
 type StatusFilter = "open" | DrawStatus | "all";
 
@@ -22,6 +23,13 @@ export interface ProductOption {
   code: string | null;
   name: string;
   series: Series;
+  /** Spellings used in the posts, so searches like "鯊魚包" still find the product */
+  aliases: string[];
+}
+
+/** Case-, space- and hyphen-insensitive, so "ux15" matches "UX-15". */
+function normalize(text: string) {
+  return text.toLowerCase().replace(/[\s\-–]/g, "");
 }
 
 interface Filters {
@@ -74,21 +82,31 @@ export function DrawExplorer({ draws, cities, products, renderedAt, initial = DE
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
   }
 
+  // Product mode: picking a product, or searching for text that matches products,
+  // groups the results into one block per product instead of store cards.
+  const matchedProducts = useMemo(() => {
+    if (filters.product) return products.filter((p) => p.slug === filters.product);
+    const q = normalize(filters.q);
+    if (!q) return [];
+    return products.filter((p) => [p.code ?? "", p.name, ...p.aliases].some((t) => normalize(t).includes(q)));
+  }, [products, filters.product, filters.q]);
+  const productMode = matchedProducts.length > 0;
+
   // Everything except the status filter, so the tab counts reflect the other filters
   const baseFiltered = useMemo(() => {
-    const q = filters.q.trim().toLowerCase();
+    const slugs = new Set(matchedProducts.map((p) => p.slug));
+    // With a product picked from the dropdown, the search box still narrows by store
+    const q = !productMode || filters.product ? normalize(filters.q) : "";
     return draws.filter((d) => {
       if (filters.city && d.city !== filters.city) return false;
-      if (filters.product && !d.items.some((i) => i.productSlug === filters.product)) return false;
+      if (productMode && !d.items.some((i) => slugs.has(i.productSlug))) return false;
       if (q) {
-        const haystack = [d.storeName, d.city, ...d.items.flatMap((i) => [i.name, i.code ?? "", i.rawName])]
-          .join(" ")
-          .toLowerCase();
-        if (!haystack.includes(q)) return false;
+        const haystack = [d.storeName, d.city, ...d.items.flatMap((i) => [i.name, i.code ?? "", i.rawName])].join(" ");
+        if (!normalize(haystack).includes(q)) return false;
       }
       return true;
     });
-  }, [draws, filters.city, filters.product, filters.q]);
+  }, [draws, filters.city, filters.product, filters.q, matchedProducts, productMode]);
 
   const counts = useMemo(() => {
     const c: Record<StatusFilter, number> = { open: 0, active: 0, upcoming: 0, ended: 0, unscheduled: 0, all: baseFiltered.length };
@@ -106,6 +124,17 @@ export function DrawExplorer({ draws, cities, products, renderedAt, initial = DE
         .filter((d) => matchesStatus(filters.status, getStatus(d, now)))
         .sort((a, b) => compareByRelevance(a, b, now)),
     [baseFiltered, filters.status, now],
+  );
+
+  const groups: ProductGroup[] = useMemo(
+    () =>
+      matchedProducts.map((product) => ({
+        product,
+        rows: visible
+          .map((draw) => ({ draw, items: draw.items.filter((i) => i.productSlug === product.slug) }))
+          .filter((r) => r.items.length > 0),
+      })),
+    [matchedProducts, visible],
   );
 
   const hasFilters = filters.city || filters.product || filters.q;
@@ -208,6 +237,8 @@ export function DrawExplorer({ draws, cities, products, renderedAt, initial = DE
             </button>
           )}
         </div>
+      ) : productMode ? (
+        <ProductGroups groups={groups} now={now} />
       ) : (
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {visible.map((d) => (

@@ -1,12 +1,18 @@
 import { Suspense } from "react";
 import { DrawExplorer, DrawExplorerFromUrl, type ProductOption } from "@/components/DrawExplorer";
 import { PageHeader } from "@/components/PageHeader";
-import { getCities, getDraws, getProductSummaries, renderedAt } from "@/lib/data";
+import { getCities, getDraws, getProductSummaries, getSpellings, renderedAt } from "@/lib/data";
 
 export default function Home() {
   const draws = getDraws();
   const cities = getCities().filter((c) => draws.some((d) => d.city === c));
-  const products: ProductOption[] = getProductSummaries().map(({ slug, code, name, series }) => ({ slug, code, name, series }));
+  const products: ProductOption[] = getProductSummaries().map(({ slug, code, name, series }) => ({
+    slug,
+    code,
+    name,
+    series,
+    aliases: getSpellings(slug).map((s) => s.name),
+  }));
   const props = { draws, cities, products, renderedAt };
 
   return (
