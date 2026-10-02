@@ -35,7 +35,7 @@ export function DrawCard({
 
   return (
     <article
-      className={`flex flex-col rounded-xl border border-line bg-surface p-4 ${status === "ended" ? "opacity-80" : ""}`}
+      className={`flex min-w-0 flex-col rounded-xl border border-line bg-surface p-4 ${status === "ended" ? "opacity-80" : ""}`}
     >
       <header className="mb-3 flex items-start justify-between gap-3">
         <div className="min-w-0">

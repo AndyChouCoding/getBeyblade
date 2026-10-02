@@ -10,6 +10,9 @@ const rawStores = rawStoresFile as RawStore[];
 
 export const dataUpdatedAt = (rawDrawsFile as RawDrawsFile).updatedAt;
 
+/** When the pages were rendered; client components use it until the real clock takes over. */
+export const renderedAt = Date.now();
+
 /** North → south, outlying islands last; unknown cities sort after these. */
 export const CITY_ORDER = [
   "基隆市", "臺北市", "新北市", "桃園市", "新竹市", "新竹縣", "苗栗縣", "臺中市",
