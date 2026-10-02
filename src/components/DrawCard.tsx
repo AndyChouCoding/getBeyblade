@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { describeTiming, formatDateTime, getStatus } from "@/lib/time";
 import type { Draw } from "@/lib/types";
-import { DrawItemList, ExternalIcon } from "./DrawItemList";
+import { DrawItemList } from "./DrawItemList";
+import { ExternalIcon } from "./ExternalIcon";
 import { StatusBadge } from "./StatusBadge";
 
 const COLLAPSED_COUNT = 6;

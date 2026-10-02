@@ -1,13 +1,6 @@
 import Link from "next/link";
+import { DrawLinkButton } from "./DrawLinkButton";
 import type { DrawItem } from "@/lib/types";
-
-export function ExternalIcon() {
-  return (
-    <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" className="shrink-0">
-      <path d="M4.5 2.5h5v5M9.5 2.5 3 9" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 export function DrawItemList({
   items,
@@ -39,22 +32,7 @@ export function DrawItemList({
               </Link>
             </div>
             {item.price != null && <span className="shrink-0 text-xs text-muted tabular">${item.price}</span>}
-            {item.url && (
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-flex min-h-8 shrink-0 items-center gap-1 rounded-md px-2.5 text-xs font-medium ${
-                  disabled
-                    ? "text-faint hover:text-muted"
-                    : "bg-accent text-white hover:opacity-90"
-                }`}
-                aria-label={`${item.name} 抽籤連結`}
-              >
-                抽籤
-                <ExternalIcon />
-              </a>
-            )}
+            {item.url && <DrawLinkButton url={item.url} label={item.name} muted={disabled} />}
           </li>
         );
       })}
