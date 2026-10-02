@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 ### Added
+
+### Fixed
+
+### Changed
+
+## [v1.0.0] - 2026-10-02
+### Added
 - Initialize Next.js (App Router) + TypeScript + Tailwind CSS project
 - Add raw source data `data/stores.json` and `data/draws.json`
 - Add data layer: product catalog with canonical names per code, store name fixes, draw status helpers
@@ -17,4 +24,3 @@
 ### Fixed
 - Correct 4 draws whose end time was scraped as equal to the start time (end time taken from the post text); treat any end time not after the start as unknown
 
-### Changed
