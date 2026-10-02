@@ -27,30 +27,46 @@ export function compareByRelevance(a: Draw, b: Draw, now: number) {
   return 0;
 }
 
-// Always format in Taiwan time so server and browser render the same text.
-const dateTimeFmt = new Intl.DateTimeFormat("zh-TW", {
-  timeZone: "Asia/Taipei",
-  month: "numeric",
-  day: "numeric",
-  weekday: "short",
-  hour: "2-digit",
-  minute: "2-digit",
-  hour12: false,
-});
+// Formatted by hand in Taiwan time (UTC+8, no DST) rather than with Intl, whose
+// output differs slightly between Node and browsers and would break hydration.
+const TAIPEI_OFFSET_MS = 8 * 60 * 60 * 1000;
+const WEEKDAYS = ["日", "一", "二", "三", "四", "五", "六"];
+const pad = (n: number) => String(n).padStart(2, "0");
 
-const dateFmt = new Intl.DateTimeFormat("zh-TW", {
-  timeZone: "Asia/Taipei",
-  year: "numeric",
-  month: "numeric",
-  day: "numeric",
-});
-
-export function formatDateTime(iso: string) {
-  return dateTimeFmt.format(new Date(iso));
+function taipei(iso: string) {
+  const d = new Date(Date.parse(iso) + TAIPEI_OFFSET_MS);
+  return {
+    y: d.getUTCFullYear(),
+    m: d.getUTCMonth() + 1,
+    d: d.getUTCDate(),
+    w: WEEKDAYS[d.getUTCDay()],
+    hh: pad(d.getUTCHours()),
+    mm: pad(d.getUTCMinutes()),
+  };
 }
 
+/** "10/2（五）11:00" */
+export function formatDateTime(iso: string) {
+  const t = taipei(iso);
+  return `${t.m}/${t.d}（${t.w}）${t.hh}:${t.mm}`;
+}
+
+/** "2026/10/2" */
 export function formatDate(iso: string) {
-  return dateFmt.format(new Date(iso));
+  const t = taipei(iso);
+  return `${t.y}/${t.m}/${t.d}`;
+}
+
+/** "10/2" */
+export function formatMonthDay(iso: string) {
+  const t = taipei(iso);
+  return `${t.m}/${t.d}`;
+}
+
+/** "2026-10-02", for grouping by Taiwan calendar day */
+export function taipeiDayKey(iso: string) {
+  const t = taipei(iso);
+  return `${t.y}-${pad(t.m)}-${pad(t.d)}`;
 }
 
 /** "2 天 3 小時" / "5 小時 12 分" / "8 分鐘" */
